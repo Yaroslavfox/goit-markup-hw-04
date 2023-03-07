@@ -35,6 +35,7 @@ body {
 	--background-color-social-items: #4d5ae5;
 	--background-color-social-list-icon: #f4f4fd;
 	--background-color-social-items-hover-focus: #404bbf;
+	--footer-social-item-hover: #31d0aa;
 }
 
 h1,
@@ -156,9 +157,10 @@ address {
 /* <!--hero-section--> */
 
 .hero {
-	display: block;
 	align-items: center;
 	padding: 188px 0;
+	margin-left: auto;
+	margin-right: auto;
 }
 
 .hero-bgrnd {
@@ -167,6 +169,8 @@ address {
 		url(../images/people-office\ 1-min.jpg);
 	background-color: var(--hero-background-color);
 	background-size: cover;
+	margin-left: auto;
+	margin-right: auto;
 }
 
 .hero-title {
@@ -241,10 +245,13 @@ address {
 	width: 264px;
 	height: 112px;
 	background-color: var(--background-color-scillscards);
-	text-align: center;
+
 	margin-bottom: 8px;
-	padding: 24px 100px;
+	justify-content: center;
+	align-content: center;
+	flex-wrap: wrap;
 }
+
 .logo {
 }
 
@@ -475,12 +482,11 @@ address {
 	margin-bottom: 16px;
 }
 .footer-social-list {
-}
-.list {
 	display: flex;
 	justify-content: center;
 	gap: 16px;
 }
+
 .footer-social-item {
 	width: 40px;
 	height: 40px;
@@ -496,7 +502,7 @@ address {
 }
 .footer-social-item :hover,
 .footer-social-item :focus {
-	background-color: #31d0aa;
+	background-color: var(--footer-social-item-hover);
 }
 
 .footer-social-icon {
@@ -540,7 +546,7 @@ address {
 .btn-portfolio:focus {
 	background-color: var(--btn-focus-background-color);
 	color: #f4f4fd;
-	box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+	box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 /* section portfolio */
@@ -561,19 +567,22 @@ address {
 	flex-basis: calc(100% / 3 - 48px);
 }
 
-.portfolio-item :hover,
-.portfolio-item :focus {
+.portfolio-item-link:hover,
+.portfolio-item-link:focus {
 	box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 
-.portfolio-item:nth-last-child(-n + 3) {
+.porttfolio-item:nth-last-child(-n + 3) {
 	margin-bottom: 0;
 }
 
-.porfolio-item-link {
+.portfolio-item-link {
+	display: block;
+	width: 100%;
+	height: 100%;
 }
 
-.porfolio-headline {
+.portfolio-headline {
 	font-weight: 500;
 	font-size: 20px;
 	line-height: 1.2;
